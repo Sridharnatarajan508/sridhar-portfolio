@@ -1,0 +1,617 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sridhar.portfolio | Java Full Stack Developer</title>
+    <meta name="description" content="Portfolio of Sridhar, a Final Year IT Student and Java Full Stack Developer.">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Poppins:wght@500;600;700&display=swap"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- EmailJS SDK -->
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("EfcDHch7ruxumd-uF");
+        })();
+    </script>
+</head>
+
+<body>
+    <div class="background-manager">
+        <div class="bg-layer bg-home active">
+            <div class="bg-shape s1"></div>
+            <div class="bg-shape s2"></div>
+            <div class="bg-shape s3"></div>
+        </div>
+        <div class="bg-layer bg-about"></div>
+        <div class="bg-layer bg-skills"></div>
+        <div class="bg-layer bg-projects"></div>
+        <div class="bg-layer bg-certifications"></div>
+        <div class="bg-layer bg-contact"></div>
+    </div>
+
+    <div class="scroll-progress-container">
+        <div class="scroll-progress-bar" id="scroll-progress"></div>
+    </div>
+
+    <div class="breadcrumbs-container" id="breadcrumbs">
+        <span>Home</span> / <span class="current-section">Intro</span>
+    </div>
+
+    <header id="navbar" class="glass">
+        <div class="container nav-container">
+            <a href="#home" class="logo">Sridhar<span class="dot">'s Portfolio</span></a>
+
+            <nav class="nav-menu" id="nav-menu">
+                <ul class="nav-list">
+                    <li><a href="#home" class="nav-link active">Home</a></li>
+                    <li><a href="#about" class="nav-link">About</a></li>
+                    <li><a href="#education" class="nav-link">Education</a></li>
+                    <li><a href="#skills" class="nav-link">Skills</a></li>
+                    <li><a href="#projects" class="nav-link">Projects</a></li>
+                    <li><a href="#certifications" class="nav-link">Certifications</a></li>
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+                <div class="nav-close" id="nav-close">
+                    <i class="fas fa-times"></i>
+                </div>
+            </nav>
+
+            <div class="nav-btns">
+                <button id="theme-toggle" class="theme-toggle" aria-label="Toggle Dark Mode">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <div class="nav-toggle" id="nav-toggle">
+                    <i class="fas fa-bars"></i>
+                </div>
+            </div>
+        </div>
+    </header>
+
+    <section id="home" class="hero-section">
+        <div class="container hero-container">
+            <div class="hero-content fade-in-up">
+                <h1 class="hero-title">Hi,I'm <span class="text-highlight">Sridhar</span></h1>
+                <h2 class="hero-subtitle">Java Full Stack Developer</h2>
+                <p class="hero-description">
+
+                    A final-year Information Technology student with a strong interest in Java Full-Stack and Web
+                    Development.
+
+                    I enjoy building clean, responsive, and user-focused web applications using HTML, CSS, JavaScript,
+                    Java, and modern backend technologies.
+
+                    I’m continuously improving my skills through hands-on projects and industry-recognized
+                    certifications, with the goal of becoming a reliable and impactful software developer.
+                </p>
+                <div class="hero-buttons">
+                    <a href="assets/resume.pdf" class="btn btn-primary" download>
+                        Download Resume <i class="fas fa-download"></i>
+                    </a>
+                    <a href="#contact" class="btn btn-secondary">
+                        Hire Me <i class="fas fa-arrow-right"></i>
+                    </a>
+                </div>
+                <div class="social-links">
+                    <a href="https://github.com/sridhar-dev" target="_blank" aria-label="GitHub"><i
+                            class="fab fa-github"></i></a>
+                    <a href="https://linkedin.com/in/sridhar-dev" target="_blank" aria-label="LinkedIn"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="https://instagram.com/sridhar-dev" target="_blank" aria-label="Instagram"><i
+                            class="fab fa-instagram"></i></a>
+                </div>
+            </div>
+
+        </div>
+        <div class="scroll-down">
+            <a href="#about">
+                <span class="mouse">
+                    <span class="wheel"></span>
+                </span>
+                <span class="arrow"><i class="fas fa-chevron-down"></i></span>
+            </a>
+        </div>
+    </section>
+
+
+    <section id="about" class="section">
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="section-subtitle">Who I Am</span>
+                <h2 class="section-title">About Me</h2>
+            </div>
+
+            <div class="about-content">
+                <div class="about-text fade-in-up">
+                    <p>
+                        I am a <strong>4th-year IT student</strong>, with a strong foundation in
+                        software application development. My journey in tech began with a curiosity for how things work
+                        on the web, which led me to specialize in <strong>Java Full Stack Development</strong>.
+                    </p>
+                    <p>
+                        I enjoy building clean, responsive, and user-focused web applications using HTML, CSS,
+                        JavaScript, and Java.
+                        I strengthen my skills through hands-on projects, certifications, and continuous self-learning.
+                        I focus on writing clean, maintainable code and following industry best practices.
+                        I am a quick learner with strong problem-solving and analytical thinking abilities.
+                        I continuously work on improving my communication and professional skills.
+                        My goal is to start my career as a Java Full-Stack or Web Developer and grow as a software
+                        professional.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <i class="fas fa-code"></i>
+                            <span class="stat-info">
+                                <strong>3+</strong> Projects Completed
+                            </span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span class="stat-info">
+                                <strong>2027</strong> Graduating Year
+                            </span>
+                        </div>
+                        <div class="stat-item">
+                            <i class="fas fa-coffee"></i>
+                            <span class="stat-info">
+                                <strong>Open</strong> to Work
+                            </span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="spoken-languages fade-in-up" style="margin-top: 50px;">
+                <h3
+                    style="font-size: 1.5rem; margin-bottom: 25px; border-left: 4px solid var(--accent-color); padding-left: 15px;">
+                    Spoken Languages</h3>
+                <div class="skills-grid">
+                    <div class="skill-category glass">
+                        <h3><i class="fas fa-language"></i> Tamil</h3>
+                        <p class="skill-desc">Native Language</p>
+                    </div>
+
+                    <div class="skill-category glass">
+                        <h3><i class="fas fa-globe-americas"></i> English</h3>
+                        <p class="skill-desc">10+ years of speaking</p>
+                        <span class="badge" style="margin: 10px 0;">Professional (B2)</span>
+                        <a href="#cert-english" class="btn-sm outline full-width">View English Certificates</a>
+                    </div>
+
+                    <div class="skill-category glass">
+                        <h3><i class="fas fa-torii-gate"></i> Japanese</h3>
+                        <p class="skill-desc">JLPT N4 Level</p>
+                        <span class="badge" style="margin: 10px 0;">Intermediate (N4)</span>
+                        <a href="#cert-japanese" class="btn-sm outline full-width">View Japanese Certificates</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="section-divider"></div>
+    </section>
+
+    <section id="education" class="section section-alt">
+        <div class="section-divider" style="position: absolute; top: 0; width: 100%; left: 0;"></div>
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="section-subtitle">Academic Journey</span>
+                <h2 class="section-title">Education</h2>
+            </div>
+
+            <div class="timeline">
+
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">2023 - 2027</span>
+                        <h3 class="degree">B.Tech in Information Technology</h3>
+                        <p class="institute">Karpagam College of Engineering - Coimbatore, Tamil Nadu, India</p>
+                        <p class="description">
+                            Pursuing my Bachelor's degree with a focus on Software Engineering, Data Structures, and Web
+                            Technologies. Maintaining a strong academic record
+                        </p>
+                    </div>
+                </div>
+                <div class="timeline-item fade-in-up">
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-content">
+                        <span class="date">2021 - 2023</span>
+                        <h3 class="degree">Higher Secondary Education</h3>
+                        <p class="institute">Kalaimagal Kalalaya Matric Hr.Sec.School - Mathur,Krishnagiri</p>
+                        <p class="description">
+                            Completed specialized coursework in Physics, Chemistry,Mathematics (PCM) and Biology.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills" class="section">
+        <div class="section-divider" style="position: absolute; top: 0; width: 100%; left: 0;"></div>
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="section-subtitle">Technical Expertise</span>
+                <h2 class="section-title">Technical Skills</h2>
+            </div>
+
+            <div class="skills-grid">
+                <div class="skill-category glass fade-in-up">
+                    <h3><i class="fas fa-code"></i> Languages</h3>
+                    <ul class="skill-list">
+                        <li><i class="fab fa-java"></i> Java (Core & Advanced)</li>
+                        <li><i class="fab fa-js"></i> JavaScript (ES6+)</li>
+                        <li><i class="fab fa-html5"></i> HTML5 & CSS3</li>
+                        <li><i class="fas fa-database"></i> SQL</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category glass fade-in-up">
+                    <h3><i class="fas fa-laptop-code"></i> Frontend</h3>
+                    <ul class="skill-list">
+                        <li><i class="fab fa-html5"></i> HTML5</li>
+                        <li><i class="fab fa-css3-alt"></i> CSS3 (Flexbox/Grid)</li>
+                        <li><i class="fab fa-js-square"></i> Javascript</li>
+                        <li><i class="fas fa-mobile-alt"></i> Responsive Design</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category glass fade-in-up">
+                    <h3><i class="fas fa-server"></i> Backend & DB</h3>
+                    <ul class="skill-list">
+                        <li><i class="fas fa-leaf"></i> Spring Boot</li>
+                        <li><i class="fas fa-database"></i> MySQL / PostgreSQL</li>
+                        <li><i class="fas fa-cubes"></i> Hibernate / JPA</li>
+                        <li><i class="fas fa-plug"></i> RESTful APIs</li>
+                    </ul>
+                </div>
+
+                <div class="skill-category glass fade-in-up">
+                    <h3><i class="fas fa-tools"></i> Tools</h3>
+                    <ul class="skill-list">
+                        <li><i class="fab fa-git-alt"></i> Git & GitHub</li>
+                        <li><i class="fas fa-terminal"></i> VS Code / Eclipse</li>
+                        <li><i class="fab fa-docker"></i> Docker (Basics)</li>
+                        <li><i class="fas fa-tasks"></i> Postman</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="projects" class="section section-alt">
+        <div class="section-divider" style="position: absolute; top: 0; width: 100%; left: 0;"></div>
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="section-subtitle">Featured Works</span>
+                <h2 class="section-title">Projects</h2>
+            </div>
+
+            <!-- Project Slider Container -->
+            <div class="slider-container" id="projects-slider">
+                <div class="slider-track">
+                    <!-- Project 1 -->
+                    <div class="project-card glass fade-in-up">
+                        <img src="https://images.unsplash.com/photo-1566073771259-6a8506099945?q=80&w=1000&auto=format&fit=crop"
+                            class="project-img-top" alt="Hotel Booking">
+                        <div class="project-content">
+                            <h3 class="project-title">Hotel Booking App</h3>
+                            <p class="project-desc">A full-stack e-commerce application featuring user authentication,
+                                product catalog, cart management, and order processing.</p>
+                            <div class="project-tags">
+                                <span>Spring Boot</span>
+                                <span>MySQL</span>
+                                <span>HTML/CSS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="btn-sm outline"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2 -->
+                    <div class="project-card glass fade-in-up">
+                        <img src="https://images.unsplash.com/photo-1576091160399-112ba8d25d1d?q=80&w=1000&auto=format&fit=crop"
+                            class="project-img-top" alt="Hospital App">
+                        <div class="project-content">
+                            <h3 class="project-title">Hospital Booking</h3>
+                            <p class="project-desc">A web-based tool to organize tasks with priority levels, deadlines,
+                                and status tracking for efficient team collaboration.</p>
+                            <div class="project-tags">
+                                <span>JSP & Servlet</span>
+                                <span>MySQL</span>
+                                <span>Java</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="btn-sm outline"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3 -->
+                    <div class="project-card glass fade-in-up">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?q=80&w=1000&auto=format&fit=crop"
+                            class="project-img-top" alt="Portfolio">
+                        <div class="project-content">
+                            <h3 class="project-title">Portfolio Website</h3>
+                            <p class="project-desc">Comprehensive employee management system covering attendance,
+                                payroll calculation, and leave management.</p>
+                            <div class="project-tags">
+                                <span>Spring MVC</span>
+                                <span>Bootstrap</span>
+                                <span>Hibernate</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="btn-sm outline"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4 -->
+                    <div class="project-card glass fade-in-up">
+                        <img src="https://images.unsplash.com/photo-1611606063065-ee7946f0787a?q=80&w=1000&auto=format&fit=crop"
+                            class="project-img-top" alt="Chat App">
+                        <div class="project-content">
+                            <h3 class="project-title">Real-time Chat App</h3>
+                            <p class="project-desc">A real-time messaging application supporting private and group chats
+                                using WebSocket technology.</p>
+                            <div class="project-tags">
+                                <span>Java WebSocket</span>
+                                <span>Vanilla JS</span>
+                            </div>
+                            <div class="project-links">
+                                <a href="#" class="btn-sm"><i class="fab fa-github"></i> Code</a>
+                                <a href="#" class="btn-sm outline"><i class="fas fa-external-link-alt"></i> Demo</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-dots"></div>
+            </div>
+
+            <div class="view-more-container fade-in-up">
+                <a href="https://github.com/sridhar-dev" target="_blank" class="btn btn-secondary">
+                    View More on GitHub <i class="fab fa-github"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <section id="certifications" class="section">
+        <div class="section-divider" style="position: absolute; top: 0; width: 100%; left: 0;"></div>
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="section-subtitle">Professional Credentials</span>
+                <h2 class="section-title">Certifications</h2>
+            </div>
+
+            <!-- Technical Certifications Slider -->
+            <h3 class="subsection-title fade-in-up">Technical Certifications</h3>
+            <div class="slider-container" id="cert-tech-slider" style="margin-bottom: 60px;">
+                <div class="slider-track">
+                    <!-- Cert 1 -->
+                    <div class="project-card glass fade-in-up">
+                        <img src="https://images.unsplash.com/photo-1599658880436-16177802580a?q=80&w=1000&auto=format&fit=crop"
+                            class="project-img-top" alt="Java Full Stack">
+                        <div class="project-content">
+                            <h3 class="project-title">Full Stack Java Development</h3>
+                            <p class="project-desc">Comprehensive training in Core Java, Spring Boot, Hibernate, and
+                                RESTful web services.</p>
+                            <p class="institute">Udemy / Coursera</p>
+                            <div class="project-links">
+                                <button class="btn-sm outline view-cert-btn" data-title="Full Stack Java Development"
+                                    data-cert="assets/Java Programming.pdf">View Certificate</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert 2 -->
+                    <div class="project-card glass fade-in-up">
+                        <img src="https://images.unsplash.com/photo-1621839673705-6617adf9e890?q=80&w=1000&auto=format&fit=crop"
+                            class="project-img-top" alt="Web Development">
+                        <div class="project-content">
+                            <h3 class="project-title">Modern Web Development</h3>
+                            <p class="project-desc">Advanced HTML5, CSS3, and JavaScript mastery including ES6+
+                                concepts.</p>
+                            <p class="institute">FreeCodeCamp</p>
+                            <div class="project-links">
+                                <button class="btn-sm outline view-cert-btn" data-title="Modern Web Development">View
+                                    Certificate</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cert 3 -->
+                    <div class="project-card glass fade-in-up">
+                        <img src="https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=1000&auto=format&fit=crop"
+                            class="project-img-top" alt="Java Programming">
+                        <div class="project-content">
+                            <h3 class="project-title">Java Programming</h3>
+                            <p class="project-desc">Mastery in relational database design, normalization, and complex
+                                queries.</p>
+                            <p class="institute">Infosys Springboard</p>
+                            <div class="project-links">
+                                <button class="btn-sm outline view-cert-btn" data-title="Java Programming"
+                                    data-cert="assets/Java Programming.pdf">View Certificate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slider Controls -->
+                <button class="slider-btn prev-btn"><i class="fas fa-chevron-left"></i></button>
+                <button class="slider-btn next-btn"><i class="fas fa-chevron-right"></i></button>
+                <div class="slider-dots"></div>
+            </div>
+
+            <!-- Language Certifications (Reverted to Static) -->
+            <h3 class="subsection-title fade-in-up" id="language-certs">Language Certifications</h3>
+
+            <div id="cert-english" class="cert-anchor-container">
+                <h4 class="cert-group-title fade-in-up"><i class="fas fa-globe-americas"></i> English Proficiency</h4>
+                <div class="projects-grid" style="margin-bottom: 40px;">
+                    <div class="project-card glass fade-in-up">
+                        <div class="project-content">
+                            <div class="project-icon">
+                                <i class="fas fa-file-alt"></i>
+                            </div>
+                            <h3 class="project-title">B2 First (FCE)</h3>
+                            <p class="project-desc">Demonstrates ability to communicate confidently in English in
+                                professional environments.</p>
+                            <p class="institute">Cambridge Assessment English</p>
+                            <div class="project-links">
+                                <button class="btn-sm outline view-cert-btn" data-title="B2 First English Certificate"
+                                    data-cert="assets/_Linguaskill Agent Detail TRF_2 (1).pdf">View Certificate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id="cert-japanese" class="cert-anchor-container">
+                <h4 class="cert-group-title fade-in-up"><i class="fas fa-torii-gate"></i> Japanese Proficiency</h4>
+                <div class="projects-grid">
+                    <div class="project-card glass fade-in-up">
+                        <div class="project-content">
+                            <div class="project-icon">
+                                <i class="fas fa-certificate"></i>
+                            </div>
+                            <h3 class="project-title">JLPT N4</h3>
+                            <p class="project-desc">Ability to understand basic Japanese including vocabulary and
+                                grammar suitable for everyday situations.</p>
+                            <p class="institute">Japan Foundation</p>
+                            <div class="project-links">
+                                <button class="btn-sm outline view-cert-btn" data-title="JLPT N4 Certificate">View
+                                    Certificate</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <section id="contact" class="section section-alt">
+        <div class="section-divider" style="position: absolute; top: 0; width: 100%; left: 0;"></div>
+        <div class="container">
+            <div class="section-header fade-in-up">
+                <span class="section-subtitle">Let's Connect</span>
+                <h2 class="section-title">Contact Me</h2>
+            </div>
+
+            <div class="contact-container">
+                <div class="contact-info fade-in-up">
+                    <h3>Let's talk about everything!</h3>
+                    <p>Don't like forms? Send me an email. 👋</p>
+
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <div>
+                            <h4>Email</h4>
+                            <p><a href="mailto:sridharnatarajan508@gmail.com">sridharnatarajan508@gmail.com</a></p>
+                        </div>
+                    </div>
+
+                    <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <div>
+                            <h4>Location</h4>
+                            <p>India</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-socials">
+                        <a href="https://www.linkedin.com/in/sridhar-natarajan-311589298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            target="_blank"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://github.com/sridhar-dev" target="_blank"><i class="fab fa-github"></i></a>
+                        <a href="https://instagram.com/sridhar-dev" target="_blank"><i class="fab fa-instagram"></i></a>
+                        <a href="https://twitter.com/sridhar-dev" target="_blank"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+
+                <form class="contact-form glass fade-in-up" id="contact-form">
+                    <input type="hidden" name="title" value="New Portfolio Inquiry">
+                    <div class="form-group">
+                        <label for="name">Your Name</label>
+                        <input type="text" id="name" name="name" placeholder="John Doe" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" placeholder="john@example.com" required>
+                    </div>
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5"
+                            placeholder="Write your project details or just say hi..." required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary submit-btn">
+                        Send Message <i class="fas fa-paper-plane"></i>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    Sridhar<span class="dot">'s Portfolio</span>
+                </div>
+                <ul class="footer-links">
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#projects">Projects</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <div class="footer-socials">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a
+                        href="https://www.linkedin.com/in/sridhar-natarajan-311589298?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i
+                            class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2026 Sridhar. All Rights Reserved.</p>
+                <a href="#home" class="scroll-top"><i class="fas fa-arrow-up"></i></a>
+            </div>
+        </div>
+        <!-- Certificate Modal -->
+        <div id="cert-modal" class="modal">
+            <div class="modal-content">
+                <span class="close-modal">&times;</span>
+                <h3 id="modal-title">Certificate Name</h3>
+                <div class="modal-body">
+                    <i class="fas fa-certificate modal-icon"></i>
+                    <p>Digital Certificate Preview</p>
+                    <!-- Placeholder for actual image -->
+                    <div class="cert-placeholder">
+                        <span>Certificate Image Would Appear Here</span>
+                    </div>
+                </div>
+                <a href="#" id="download-link" class="btn btn-primary">Download PDF <i class="fas fa-download"></i></a>
+            </div>
+        </div>
+
+        <!-- Scripts -->
+        <script src="js/script.js"></script>
+</body>
+
+</html>
